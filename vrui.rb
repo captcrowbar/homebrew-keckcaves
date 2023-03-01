@@ -29,7 +29,7 @@ class Vrui < Formula
     args << "PKGCONFIGINSTALLDIR=#{lib}/pkgconfig"
     args << "PLUGININSTALLDIR=#{lib}/#{name}"
     args << "SHAREINSTALLDIR=#{share}/#{name}"
-    args << "PNG_BASEDIR=#{(MacOS.version >= :mountain_lion) ? HOMEBREW_PREFIX : MacOS::X11.prefix}"
+    args << "PNG_BASEDIR=#{(MacOS.version >= :mountain_lion) ? HOMEBREW_PREFIX : MacOS::libx11.prefix}"
     #args << "X11_BASEDIR=#{MacOS::X11.prefix}"
     #args << "GL_BASEDIR=#{MacOS::X11.prefix}"
     #args << "GLU_BASEDIR=#{MacOS::X11.prefix}"
